@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import "../../_dnn-base/scss/_overrides";
+
+// Fonts
+@import "base/fonts";
+
+// Bootstrap variable overrides — must come before BS5 import
+@import "base/variables";
+
+// Bootstrap 5
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Theme layout
+@import "base/login";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/dnn";
+
+// Sticky footer layout
+.apf5-theme {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.apf5-main {
+    flex-grow: 1;
+}

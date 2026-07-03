@@ -1,0 +1,37 @@
+.apf5-header {
+    z-index: 1000;
+
+    .eyebrow-bar {
+        background-color: $color-eyebrow-bg;
+        margin: 0;
+
+        a {
+            color: $color-nav-text;
+            font-weight: 400;
+
+            &:hover {
+                color: $color-nav-hover;
+            }
+        }
+    }
+
+    .logo-nav-bar {
+        background-color: $color-nav-bg;
+        margin: 0;
+    }
+
+    a[id*="dnnLOGO"] {
+        display: block;
+        padding: 1.125rem 0;
+
+        img {
+            height: 70px;
+            max-height: 100%;
+            width: auto;
+        }
+
+        @media (max-width: 400px) {
+            img { height: 50px; }
+        }
+    }
+}
