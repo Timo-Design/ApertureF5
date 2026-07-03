@@ -1,0 +1,24 @@
+.apf5-footer {
+    background-color: $color-footer-bg;
+    color: #ffffff;
+    margin: 0;
+
+    a {
+        color: #ffffff;
+        font-weight: 400;
+
+        &:hover { color: rgba(255, 255, 255, 0.75); }
+    }
+
+    .footer-terms-privacy {
+        font-size: small;
+
+        .apf5-terms::after {
+            content: " | ";
+            opacity: 0.25;
+        }
+
+        a { font-weight: 200; }
+    }
+
+}

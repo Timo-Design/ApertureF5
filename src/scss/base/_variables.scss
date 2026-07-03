@@ -1,0 +1,46 @@
+// Font
+$font-family-sans-serif: 'Ubuntu', Helvetica, sans-serif;
+$font-size-base:          1rem;
+$font-weight-base:        300;
+$line-height-base:        1.5;
+
+// Colors (mapped from Aperture's palette)
+$primary:   #00a5e0;
+$secondary: #ed3d46;
+$dark:      #0e2936;
+$light:     #ededee;
+
+// Body
+$body-color: #000000;
+$body-bg:    #ffffff;
+
+// Links
+$link-color:            $primary;
+$link-hover-color:      #1aaee3;
+$link-decoration:       none;
+$link-hover-decoration: none;
+
+// Headings
+$headings-font-family: 'Ubuntu', Helvetica, sans-serif;
+$headings-font-weight: 500;
+
+// Border radius — Aperture uses 0
+$border-radius:    0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$border-radius-xl: 0;
+$border-radius-pill: 50rem;
+
+// Navbar
+$navbar-padding-y: 0.5rem;
+
+// Theme-specific (not BS5 variables, used in layout partials)
+$color-eyebrow-bg:  #0e2936;   // tertiary
+$color-nav-bg:      #3c7a9a;   // tertiary-light
+$color-footer-bg:   #0e2936;   // tertiary
+$color-nav-text:    #f5f5f5;   // background-light
+$color-nav-hover:   #ffffff;
+$color-nav-sub-bg:  #0e2936;   // tertiary
+
+$nav-height: 168px;
+$mobile-nav-width: 320px;
