@@ -2,7 +2,7 @@
 @using System.Dynamic;
 @inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
 
-<span class="apf5-mobile-menu" id="nav-mobile">
+<div class="apf5-mobile-menu" id="nav-mobile">
     <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -14,7 +14,7 @@
             </ul>
         </nav>
     </div>
-</span>
+</div>
 
 @helper RenderPages(IEnumerable<MenuNode> pages)
 {
@@ -28,7 +28,7 @@
         var hasChildren = page.HasChildren();
         var attrTarget = !string.IsNullOrEmpty(page.Target) ? ("target=\"" + page.Target + "\"") : string.Empty;
 
-        <li class="nav-item @(hasChildren ? "nav-expand d-flex align-items-center" : string.Empty) @(page.Selected ? "selected" : string.Empty)">
+        <li class='nav-item @(hasChildren ? "nav-expand d-flex align-items-center" : string.Empty) @(page.Selected ? "selected" : string.Empty)'>
             @if (page.Enabled)
             {
                 <a class="nav-link" href="@page.Url" @attrTarget>@page.Text</a>
